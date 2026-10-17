@@ -1,0 +1,564 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#761819">
+  <meta name="description" content="دعوت‌نامه مراسم افتتاحیه کارخانه پیام شرکت نوین دانش آینده">
+
+  <title>افتتاحیه کارخانه پیام | نوین دانش آینده</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    :root {
+      --background: #761819;
+      --text: #ffffff;
+      --text-muted: #f0dada;
+      --accent: #e7c9a0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--background);
+      color: var(--text);
+      font-family: "Vazirmatn", Tahoma, sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 2;
+      text-align: center;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img,
+    video {
+      max-width: 100%;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 28px 36px 50px;
+    }
+
+    /* Top logo */
+
+    .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 32px;
+    }
+
+    .logo-top {
+      display: block;
+      width: 125px;
+      max-height: 100px;
+      object-fit: contain;
+      object-position: center;
+    }
+
+    /* Main heading */
+
+    .main-title {
+      margin: 0 auto 32px;
+      max-width: 800px;
+      font-size: clamp(24px, 4vw, 36px);
+      line-height: 1.8;
+      font-weight: 800;
+      color: var(--text);
+    }
+
+    /* Invitation image */
+
+    .invitation-image {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0 auto 48px;
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+    }
+
+    /* Invitation text */
+
+    .description {
+      max-width: 780px;
+      margin: 0 auto 54px;
+      text-align: center;
+      font-size: 17px;
+      line-height: 2.5;
+      font-weight: 400;
+    }
+
+    .description p {
+      margin: 0 0 26px;
+    }
+
+    .description p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Speakers */
+
+    .speakers-section {
+      margin: 0 auto 56px;
+      max-width: 700px;
+    }
+
+    .section-title {
+      margin: 0 0 26px;
+      font-size: 22px;
+      line-height: 1.9;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .speaker-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px 32px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .speaker-list li {
+      min-height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 12px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+      font-size: 16px;
+      color: var(--text);
+    }
+
+    /* Event information */
+
+    .event-info {
+      margin: 0 auto 54px;
+      max-width: 700px;
+    }
+
+    .event-info p {
+      margin: 0 0 18px;
+      font-size: 18px;
+      line-height: 2.2;
+    }
+
+    .event-info strong {
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    /* Closing */
+
+    .closing {
+      margin: 0 auto 56px;
+      line-height: 2.3;
+    }
+
+    .closing p {
+      margin: 0;
+    }
+
+    .closing .respect {
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+
+    .closing .manager-name {
+      font-size: 22px;
+      font-weight: 800;
+      margin-bottom: 2px;
+    }
+
+    .closing .manager-role {
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    /* Video */
+
+    .video-section {
+      max-width: 850px;
+      margin: 0 auto 60px;
+    }
+
+    .video-title {
+      margin: 0 0 24px;
+      font-size: 23px;
+      line-height: 1.9;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .invitation-video {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 520px;
+      margin: 0 auto;
+      background: #000000;
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+    }
+
+    .video-note {
+      margin: 16px 0 0;
+      color: var(--text-muted);
+      font-size: 13px;
+      line-height: 2;
+    }
+
+    /* Navigation links */
+
+    .navigation-section {
+      max-width: 850px;
+      margin: 0 auto 50px;
+      text-align: center;
+    }
+
+    .navigation-title {
+      margin: 0 0 25px;
+      font-size: 22px;
+      line-height: 1.9;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .navigation-links {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .navigation-links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 70px;
+      padding: 14px 12px;
+      border: 1px solid rgba(255, 255, 255, 0.65);
+      color: #ffffff;
+      text-decoration: none;
+      text-align: center;
+      font-family: "Vazirmatn", Tahoma, sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.9;
+      overflow-wrap: anywhere;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+    .navigation-links a:hover {
+      background-color: #ffffff;
+      color: #761819;
+    }
+
+    .navigation-links a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 4px;
+    }
+
+    /* Bottom logo */
+
+    .footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+      padding-top: 28px;
+    }
+
+    .logo-bottom {
+      display: block;
+      width: 110px;
+      max-height: 90px;
+      object-fit: contain;
+    }
+
+    /* Mobile layout */
+
+    @media (max-width: 600px) {
+      body {
+        font-size: 15px;
+        line-height: 2;
+      }
+
+      .page {
+        padding: 20px 18px 36px;
+      }
+
+      .header {
+        margin-bottom: 26px;
+      }
+
+      .logo-top {
+        width: 95px;
+        max-height: 75px;
+      }
+
+      .main-title {
+        font-size: 25px;
+        line-height: 1.9;
+        margin-bottom: 24px;
+      }
+
+      .invitation-image {
+        margin-bottom: 34px;
+      }
+
+      .description {
+        font-size: 15px;
+        line-height: 2.4;
+        margin-bottom: 42px;
+      }
+
+      .description p {
+        margin-bottom: 22px;
+      }
+
+      .speakers-section {
+        margin-bottom: 42px;
+      }
+
+      .section-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+
+      .speaker-list {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      .speaker-list li {
+        font-size: 15px;
+        min-height: 42px;
+      }
+
+      .event-info {
+        margin-bottom: 42px;
+      }
+
+      .event-info p {
+        font-size: 16px;
+        margin-bottom: 14px;
+      }
+
+      .closing {
+        margin-bottom: 44px;
+      }
+
+      .closing .manager-name {
+        font-size: 20px;
+      }
+
+      .video-section {
+        margin-bottom: 42px;
+      }
+
+      .video-title {
+        font-size: 20px;
+        margin-bottom: 18px;
+      }
+
+      .navigation-section {
+        margin-bottom: 42px;
+      }
+
+      .navigation-title {
+        font-size: 20px;
+        margin-bottom: 18px;
+      }
+
+      .navigation-links {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      .navigation-links a {
+        min-height: 54px;
+        font-size: 14px;
+      }
+
+      .footer {
+        margin-top: 36px;
+        padding-top: 20px;
+      }
+
+      .logo-bottom {
+        width: 90px;
+        max-height: 75px;
+      }
+      @media (max-width: 600px) {
+  .navigation-section {
+    display: block;
+    width: 100%;
+  }
+
+  .navigation-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .navigation-links a {
+    display: flex;
+    width: 100%;
+  }
+}
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+
+    <!-- Company logo -->
+    <header class="header">
+      <img
+        class="logo-top"
+        src="لوگو دیجیتال.png"
+        alt="لوگوی شرکت نوین دانش آینده"
+      >
+    </header>
+
+    <!-- Main title -->
+    <h1 class="main-title">
+      افتتاحیه کارخانه پیام شرکت نوین دانش آینده
+    </h1>
+
+    <!-- Invitation image -->
+    <img
+      class="invitation-image"
+      src="بنر-دیجیتال-دعوتنامه.png"
+      alt="تصویر دعوت‌نامه افتتاحیه کارخانه پیام"
+    >
+
+    <!-- Invitation text -->
+    <section class="description">
+      <p>
+        بدینوسیله از شما سرور ارجمند دعوت به عمل می‌آید تا با حضور ارزشمند خود در مراسم آئین افتتاحیه کارخانه شرکت نوین دانش آینده، موجب افتخار و خرسندی ما باشید.
+      </p>
+
+      <p>
+        بی‌تردید حضور شما مایه مباهات و دلگرمی مجموعه ما در آغاز فصلی نو از مسیر تولید، توسعه و نوآوری خواهد شد.
+      </p>
+    </section>
+
+    <!-- Speakers -->
+    <section class="speakers-section">
+      <h2 class="section-title">سخنرانان مراسم</h2>
+
+      <ul class="speaker-list">
+        <li>جناب آقای دکتر فراهانی|معاون هماهنگی پیگیری پیشنهادات ریاست جمهوری</li>
+        <li>جناب آقای دکتر عبداللهی|استاندار البرز</li>
+        <li>جناب آقای دکتر حسنلو|مدیریت عامل منطقه ویژه پیام</li>
+        <li>جناب آقای دکتر فخریه کاشان معاون ارزی اسبق بانک مرکزی،قائم مقام وزیر راه وشهرسازی</li>
+        <li>جناب آقای دکتر باقری|نایب رئیس اتاق ابران رئیس هیئت مدیره سندیکای صنعت برق</li>
+        <li>جناب آقای دکتر حلوایی|رئیس هیئت مدیره انجمن اپک</li>
+        <li>جناب آقای دکتر سجاد|رئیس هیئت مدیره انجمن صنفی شزکتهای اتوماسیون صنعتی</li>
+      </ul>
+    </section>
+
+    <!-- Event details -->
+    <section class="event-info">
+      <p>
+        <strong>زمان:</strong>
+        سوم آبان ماه ۱۴۰۵، ساعت ۹ الی ۱۴
+      </p>
+
+      <p>
+        <strong>مکان:</strong>
+        منطقه ویژه اقتصادی پیام
+      </p>
+    </section>
+
+    <!-- Closing -->
+    <section class="closing">
+      <p class="respect">با احترام</p>
+      <p class="manager-name">محمود مقیمی</p>
+      <p class="manager-role">مدیرعامل شرکت نوین دانش آینده</p>
+    </section>
+
+    <!-- Video -->
+    <section class="video-section">
+      <h2 class="video-title">همراه با ما در این مسیر تازه</h2>
+
+      <video
+        class="invitation-video"
+        controls
+        playsinline
+        preload="metadata"
+      >
+        <source src="invitation.mp4" type="video/mp4">
+        مرورگر شما از پخش ویدئو پشتیبانی نمی‌کند.
+      </video>
+
+      <p class="video-note">
+        برای مشاهده ویدئو، دکمه پخش را انتخاب کنید.
+      </p>
+    </section>
+
+    <!-- Navigation links -->
+    <section class="navigation-section">
+      <h2 class="navigation-title">مسیریابی به محل مراسم</h2>
+
+      <div class="navigation-links">
+        <a
+          href="https://neshan.org/maps/places/rbvrRAQxQHhp#c35.767-50.860-16z-0p"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          مسیریابی با نرم‌افزار نشان
+        </a>
+
+        <a
+          href="https://balad.ir/location?latitude=35.767494&longitude=50.859763&zoom=16.500000#15/35.76833/50.85976"
+          target="https://balad.ir/location?latitude=35.767494&longitude=50.859763&zoom=16.500000#15/35.76833/50.85976"
+          rel="https://balad.ir/location?latitude=35.767494&longitude=50.859763&zoom=16.500000#15/35.76833/50.85976"
+        >
+          مسیریابی با نرم‌افزار بلد
+        </a>
+
+        <a
+          href="https://goo.gl/maps/3DSX3Y3oaw6FoEEt6?g_st=ac"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          مسیریابی با نرم‌افزار Maps
+        </a>
+      </div>
+    </section>
+
+    <!-- Bottom logo -->
+    <footer class="footer">
+      <img
+        class="logo-bottom"
+        src="logo-neda.png"
+        alt="لوگوی نوین دانش آینده"
+        loading="lazy"
+      >
+    </footer>
+
+  </main>
+</body>
+</html>
